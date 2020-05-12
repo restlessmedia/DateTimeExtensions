@@ -22,7 +22,7 @@ namespace System
         suffix = " from now";
       }
 
-      return _descriptors.First(n => totalMinutes < n.UpperBound).DescriptionGenerator(totalMinutes) + suffix;
+      return string.Concat(_descriptors.First(n => totalMinutes < n.UpperBound).DescriptionGenerator(totalMinutes), suffix);
     }
 
     /// <summary>
