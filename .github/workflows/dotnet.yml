@@ -11,6 +11,15 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 2.2.108
+    - name: Install NuGet client
+      uses: warrenbuckley/Setup-Nuget@v1
+    - name: restore package
+      run: |
+        nuget sources add -name "private-packages" -Source https://ci.appveyor.com/nuget/restlessmedia-fqb6idr6vwjb -StorePasswordInClearText -Username coops@restlessmedia.co.uk -Password ${env:Password}
+        dotnet restore ConsoleApp1 
+      working-directory: ConsoleApp1
+      env: 
+        Password: ${{ secrets.APPVEYOR_PASSWORD }}
     - name: Build with dotnet
       run: dotnet build --configuration Release
     - name: Test with dotnet
