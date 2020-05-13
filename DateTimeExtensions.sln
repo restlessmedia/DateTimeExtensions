@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeExtensions", "src\DateTimeExtensions.csproj", "{8278BA85-882F-4FB2-8AEE-A9AF6709753D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimeExtensions", "src\DateTimeExtensions.csproj", "{8278BA85-882F-4FB2-8AEE-A9AF6709753D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeExtensions.Tests", "DateTimeExtensions.Tests\DateTimeExtensions.Tests.csproj", "{943157E4-01A2-413C-B8BE-E563D2D849EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimeExtensions.Tests", "DateTimeExtensions.Tests\DateTimeExtensions.Tests.csproj", "{943157E4-01A2-413C-B8BE-E563D2D849EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00E1CB8B-A5C9-40C7-B254-738520BBAD19}"
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
 		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+		nuget.config = nuget.config
 		README.md = README.md
 	EndProjectSection
 EndProject

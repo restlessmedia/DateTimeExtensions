@@ -6,6 +6,11 @@ namespace DateExtensions.Tests
 {
   public class ExtensionsTests
   {
+    public ExtensionsTests()
+    {
+      DateTime _fixedDate = DateTime.Parse("2020-05-12 15:30:40.1234");
+    }
+
     [Fact]
     public void ToRelativeDate()
     {
@@ -36,5 +41,13 @@ namespace DateExtensions.Tests
     {
       DateTime.Now.Between(DateTime.Now.AddHours(-1), DateTime.Now.AddHours(1)).MustBeTrue();
     }
+
+    [Fact]
+    public void IsBusinessHour()
+    {
+      _fixedDate.IsBusinessHour().MustBeTrue();
+    }
+
+    private readonly DateTime _fixedDate;
   }
 }
