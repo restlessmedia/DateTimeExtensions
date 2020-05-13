@@ -8,7 +8,7 @@ namespace DateExtensions.Tests
   {
     public ExtensionsTests()
     {
-      DateTime _fixedDate = DateTime.Parse("2020-05-12 15:30:40.1234");
+      _fixedDate = DateTime.Parse("2020-05-12 15:30:40.1234");
     }
 
     [Fact]
@@ -33,7 +33,7 @@ namespace DateExtensions.Tests
     [Fact]
     public void GetTimestamp()
     {
-      DateTime.Parse("2020-05-12 15:30:40.1234").GetTimestamp().MustBe("202005121530401234");
+      _fixedDate.GetTimestamp().MustBe("202005121530401234");
     }
 
     [Fact]
