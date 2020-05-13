@@ -23,5 +23,5 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
         name: DateTimeExtensions
-        path: DateTimeExtensions/src/bin/Release/net472
+        path: src/bin/Release/net472
       name: 'Upload artifacts'
