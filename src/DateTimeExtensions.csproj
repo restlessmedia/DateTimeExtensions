@@ -1,12 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <RootNamespace>DateExtensions</RootNamespace>
-    <AssemblyName>DateExtensions</AssemblyName>
+    <RootNamespace>DateTimeExtensions</RootNamespace>
+    <AssemblyName>DateTimeExtensions</AssemblyName>
     <TargetFramework>net472</TargetFramework>
     <AssemblyTitle>DateExtensions</AssemblyTitle>
     <Product>DateExtensions</Product>
     <Copyright>Copyright ©  2020</Copyright>
     <OutputPath>bin\$(Configuration)\</OutputPath>
+    <Version>2.0.0</Version>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
